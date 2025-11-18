@@ -1,0 +1,27 @@
+package exam01;
+
+public class NullPoint {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String data = null;
+		
+		try {
+//			data = new String("Hi");
+			System.out.println(data.toString());
+			System.out.println("It is OK");
+		}
+		
+		catch (Exception e) {
+//		catch (ClassCastException e) {
+//			System.out.println(e);
+			System.out.println("Null pointer");
+		}
+		
+		finally {
+			System.out.println("Exception module done");
+		}
+		System.out.println("Program is running");
+	}
+
+}
